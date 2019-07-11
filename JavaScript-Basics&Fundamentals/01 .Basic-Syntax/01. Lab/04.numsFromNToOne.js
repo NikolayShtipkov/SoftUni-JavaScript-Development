@@ -3,4 +3,3 @@ function solve(n){
         console.log(i)
     }
 }
-solve(12);
