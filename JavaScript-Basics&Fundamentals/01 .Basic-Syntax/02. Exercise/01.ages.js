@@ -15,4 +15,3 @@ function solve(n){
         console.log('baby');
     }
 }
-solve(18);
