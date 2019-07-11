@@ -6,4 +6,4 @@ function solve(grade){
         console.log(`Not excellent`)
     }
 }
-solve(6.00);
+solve(5.00);
