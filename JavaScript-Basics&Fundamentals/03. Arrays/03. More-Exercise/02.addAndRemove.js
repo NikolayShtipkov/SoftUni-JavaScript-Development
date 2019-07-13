@@ -15,4 +15,3 @@ function solve(commands) {
         console.log(arr.join(' '));
     }
 }
-solve(['remove', 'remove', 'remove']);

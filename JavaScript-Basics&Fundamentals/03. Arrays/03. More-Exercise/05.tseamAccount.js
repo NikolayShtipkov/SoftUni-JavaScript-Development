@@ -25,17 +25,10 @@ function solve(commands) {
 
             if (library.includes(currentGame)) {
                 let index = library.indexOf(currentGame);
-                library.splice(index, 1, game);
+                library.splice(index + 1, 0, `${currentGame}:${expansion}`);
             }
         }
     }
 
     console.log(library.join(' '));
 }
-
-solve(['CS WoW Diablo',
-'Uninstall XCOM',
-'Update PeshoGame',
-'Update WoW',
-'Expansion Civ-V',
-'Play!']);
