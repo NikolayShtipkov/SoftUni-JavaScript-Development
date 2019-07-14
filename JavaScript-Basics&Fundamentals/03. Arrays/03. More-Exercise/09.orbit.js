@@ -9,7 +9,7 @@ function orbit(input) {
         matrix.push([]);
     }
  
-    for(let row = 0; row < rows; row++) {
+    for(let row = 0; row< rows; row++) {
         for(let col=0; col<cols; col++) {
             matrix[row][col] = Math.max(Math.abs(row - starRow), Math.abs(col - starCol)) + 1;
         }
@@ -17,5 +17,3 @@ function orbit(input) {
  
     console.log(matrix.map(row => row.join(" ")).join("\n"));
 }
-
-orbit([4,4,0,0])
