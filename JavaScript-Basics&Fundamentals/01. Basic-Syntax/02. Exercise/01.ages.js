@@ -1,4 +1,5 @@
 function solve(n){
+    
     if(n > 65){
         console.log('elder');
     }
