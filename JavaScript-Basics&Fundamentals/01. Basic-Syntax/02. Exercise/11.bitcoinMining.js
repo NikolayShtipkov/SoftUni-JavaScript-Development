@@ -5,6 +5,7 @@ function printMiningStat(params) {
 
     for (let i = 0; i < params.length; i++) {
         let currentGrams = Number(params[i]);
+        
         if ((i + 1) % 3 === 0) {
             currentGrams *= 0.7;
         }
@@ -20,13 +21,15 @@ function printMiningStat(params) {
     let moneyLeft = bgn - (totalBitcoins * bitCoinPrice);
 
     console.log(`Bought bitcoins: ${totalBitcoins}`);
+
     if (totalBitcoins > 0) {
         console.log(`Day of the first purchased bitcoin: ${dayBoughtFirstBitcoin}`);
     }
+
     console.log(`Left money: ${moneyLeft.toFixed(2)} lv.`);
 
     function precisionRound(number, precision) {
         var factor = Math.pow(10, precision);
         return Math.round(number * factor) / factor;
-      }
+    }
 }
