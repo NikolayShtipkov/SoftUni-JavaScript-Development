@@ -1,4 +1,5 @@
 function solve(num, count) {
+    
     if (count > 15) {
         count = 15;
     }
@@ -7,4 +8,3 @@ function solve(num, count) {
 
     console.log(roundedNum);
 }
-solve(4.5555 , 2);
