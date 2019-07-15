@@ -7,6 +7,7 @@ function login(arr){
     }
 
     let counter = 1;
+
     for(i = 1; i <= arr.length - 1; i++, counter++){
         let currentUsername = arr[i];
         if(counter === 4){
@@ -19,8 +20,7 @@ function login(arr){
             break;
         }
         else{
-            console.log(`Incorrect password. Try again.`)
+            console.log(`Incorrect password. Try again.`);
         }
-        
     }
 }
