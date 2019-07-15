@@ -44,5 +44,6 @@ function solve(group, type, day){
             }
             break;   
     }
-    console.log(`Total price: ${price.toFixed(2)}`)       
+
+    console.log(`Total price: ${price.toFixed(2)}`);       
 }
