@@ -8,4 +8,3 @@ function solve(wood) {
     console.log(wood.toFixed(2));
     console.log(counter);
 }
-solve(1000);
