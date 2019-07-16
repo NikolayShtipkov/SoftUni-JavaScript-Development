@@ -43,4 +43,3 @@ function solve (n) {
         }
     }
 }
-solve(10)
