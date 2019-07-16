@@ -25,4 +25,3 @@ function solve(num) {
         console.log('nine');
     }
 }
-solve(123)
