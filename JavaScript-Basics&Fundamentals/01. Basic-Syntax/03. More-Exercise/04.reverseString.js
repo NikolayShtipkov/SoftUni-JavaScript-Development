@@ -4,7 +4,6 @@ function reverse(string) {
     string = string.split('').reverse().join('');
     console.log(string);
 }
-reverse('yellow');
 
 //primitive
 
@@ -17,4 +16,3 @@ function solve(str) {
 
     console.log(reversed);
 }
-solve('hello');
