@@ -4,4 +4,3 @@ function solve(a, b, c) {
 
     console.log(sorted.join('\n'));
 }
-solve(1,2,3)
