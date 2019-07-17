@@ -12,5 +12,3 @@ function solve(arr) {
 
     console.log(`${print.join('\n')}`)
 }
-
-solve([7, -2, 8, 9]);
