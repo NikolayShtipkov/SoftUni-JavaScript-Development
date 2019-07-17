@@ -1,3 +1,3 @@
 function solve(firstName, secondName, contact){
-    console.log(`${firstName}${contact}${secondName}`)
+    console.log(`${firstName}${contact}${secondName}`);
 }
