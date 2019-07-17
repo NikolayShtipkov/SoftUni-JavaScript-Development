@@ -3,5 +3,5 @@ function solve(distance, passengers, price){
     neededFuel += passengers * 0.1;
     let money = neededFuel * price;
 
-    console.log(`Needed money for that trip is ${money}lv.`)
+    console.log(`Needed money for that trip is ${money}lv.`);
 }
