@@ -20,5 +20,3 @@ function sum (num) {
     
     console.log(result);
 }
-
-sum(123);
