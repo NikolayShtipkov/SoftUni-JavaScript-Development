@@ -1,4 +1,5 @@
 function solve (first, symbol, second){
+    
     switch(symbol){
         case '+':
             console.log((first + second).toFixed(2));
