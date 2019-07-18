@@ -23,5 +23,3 @@ function solve (count, helmetP, swordP, shieldP, armorP) {
 
     console.log(`Gladiator expenses: ${expences.toFixed(2)} aureus`);
 }
-
-solve(23, 12.50, 21.50, 40, 200)
