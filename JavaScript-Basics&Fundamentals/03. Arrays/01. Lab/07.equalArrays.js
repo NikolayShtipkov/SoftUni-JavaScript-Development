@@ -1,10 +1,10 @@
 function equal (firstArr, secondArr) {
     
     for(let i = 0; i < firstArr.length; i++) {
-        firstArr[i] = +(firstArr[i])
+        firstArr[i] = +(firstArr[i]);
     }
     for(let i = 0; i < secondArr.length; i++) {
-        secondArr[i] = +(secondArr[i])
+        secondArr[i] = +(secondArr[i]);
     }
 
     let sum = 0;

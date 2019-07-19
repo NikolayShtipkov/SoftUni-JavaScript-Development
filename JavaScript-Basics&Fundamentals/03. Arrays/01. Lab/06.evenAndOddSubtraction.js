@@ -1,6 +1,6 @@
 function solve (arr) {
     for(let i =0; i < arr.length; i++){
-        arr[i] = Number(arr[i])
+        arr[i] = Number(arr[i]);
     }
 
     let sumEven = 0;

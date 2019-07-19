@@ -3,7 +3,7 @@ function solve (arr) {
         let currentValue = arr[i];
         let reversedValue = arr[arr.length - 1 - i];
         arr[i] = reversedValue;
-        arr[arr.length - 1 - i] = currentValue
+        arr[arr.length - 1 - i] = currentValue;
     }
     let result = arr.join(' ');
 
