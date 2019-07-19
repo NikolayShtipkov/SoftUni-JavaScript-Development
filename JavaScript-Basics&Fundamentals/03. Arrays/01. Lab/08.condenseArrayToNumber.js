@@ -19,5 +19,3 @@ function solve(arr) {
 
     console.log(finalResult);
 }
-
-solve([3])
