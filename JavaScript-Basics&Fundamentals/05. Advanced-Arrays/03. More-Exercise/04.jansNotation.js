@@ -1,4 +1,4 @@
-    function calculate(params) {
+function calculate(params) {
     let operations = {
         '+': (first, second) => first + second, 
         '-': (first, second) => first - second, 
