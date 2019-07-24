@@ -18,7 +18,7 @@ function solve(input) {
     }
 
     if (typeSong === 'all') {
-        songs.forEach((i) => i.type === typeSong);
+        songs.forEach((i) => console.log(i.name));
     } else {
         let filtered = songs.filter((i) => i.type === typeSong);
         filtered.forEach((i) => console.log(i.name));

@@ -8,6 +8,6 @@ function solve(firstName, lastName, age) {
     let entries = Object.entries(id);
 
     for(let [key, value] of entries) {
-        console.log(`${key}: ${value}`)
+        console.log(`${key}: ${value}`);
     }
 }
