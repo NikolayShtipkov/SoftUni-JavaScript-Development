@@ -47,6 +47,6 @@ function solve(employeeArr) {
     for(let employee of employeeArr) {
         let personalNumber = employee.length;
 
-        console.log(`Name: ${i.name} -- Personal Number: ${i.number}`);
+        console.log(`Name: ${employee} -- Personal Number: ${personalNumber}`);
     }
 }
