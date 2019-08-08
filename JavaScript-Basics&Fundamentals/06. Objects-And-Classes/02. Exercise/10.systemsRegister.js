@@ -1,35 +1,59 @@
-function storeCatalogue(arr) {
-    let products = new Map();
-
-    for (let line of arr) {
-        let data = line.split(' : ');
-        let letter = line[0][0];
-
-        if (!products.has(letter)) {
-            products.set(letter, data);
-        } else {
-            products.set(letter,products.get(letter)+","+data);
+function solve(input) {
+    let systems = {};
+ 
+    for(let inputRow of input) {
+        let [ system, component, subcomponent ]
+            = inputRow.split(' | ');
+ 
+        if (!systems.hasOwnProperty(system)) {
+            systems[system] = {};
         }
+ 
+        let allComponents = systems[system];
+        if (!allComponents.hasOwnProperty(component)) {
+            allComponents[component] = [];
+        }
+ 
+        let allSubcomponents = allComponents[component];
+        allSubcomponents.push(subcomponent);
     }
-    let myProducts = new Map([...products.entries()].sort());
-
-    for (let [letter, items] of myProducts) {
-        console.log(letter);
-
-        if(items.constructor !== Array){
-            items=items.split(',');
+ 
+    let sortedSystems = Object.entries(systems)
+        .sort(compareSystems);
+ 
+    for(let [ system, components ] of sortedSystems) {
+        let sortedComponents = Object.entries(components)
+            .sort((a, b) => {
+                return b[1].length - a[1].length;
+            });
+ 
+        console.log(system);
+        for(let [ name, subcomponents ] of sortedComponents) {
+            console.log(`|||${name}`);
+            for(let subC of subcomponents) {
+                console.log(`||||||${subC}`);
+            }
         }
-        let products = [];
-
-        for (let i = 0; i < items.length; i+=2) {
-            let product = items[i];
-            let price = items[i+1];
-            let line = product+": "+price;
-            products.push(line);
-            products.sort();
+ 
+    }
+ 
+    function compareSystems(a, b) {
+        let [ systemAName, systemAComponents ]
+            = a;
+ 
+        let [ systemBName, systemBComponents ]
+            = b;
+ 
+        let aComponentsCount =  Object.entries(systemAComponents).length;
+        let bComponentsCount = Object.entries(systemBComponents).length;
+ 
+ 
+        let firstCriteria = bComponentsCount - aComponentsCount;
+ 
+        if (firstCriteria === 0) {
+            return systemAName.localeCompare(systemBName);
         }
-        for (let product of products) {
-            console.log(`  ${product}`);
-        }
+ 
+        return firstCriteria;
     }
 }
