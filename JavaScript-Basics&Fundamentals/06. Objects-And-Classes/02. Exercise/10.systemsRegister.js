@@ -26,10 +26,11 @@ function solve(input) {
             .sort((a, b) => {
                 return b[1].length - a[1].length;
             });
- 
         console.log(system);
+        
         for(let [ name, subcomponents ] of sortedComponents) {
             console.log(`|||${name}`);
+
             for(let subC of subcomponents) {
                 console.log(`||||||${subC}`);
             }
@@ -38,15 +39,11 @@ function solve(input) {
     }
  
     function compareSystems(a, b) {
-        let [ systemAName, systemAComponents ]
-            = a;
+        let [ systemAName, systemAComponents ] = a;
+        let [ systemBName, systemBComponents ] = b;
  
-        let [ systemBName, systemBComponents ]
-            = b;
- 
-        let aComponentsCount =  Object.entries(systemAComponents).length;
+        let aComponentsCount = Object.entries(systemAComponents).length;
         let bComponentsCount = Object.entries(systemBComponents).length;
- 
  
         let firstCriteria = bComponentsCount - aComponentsCount;
  
