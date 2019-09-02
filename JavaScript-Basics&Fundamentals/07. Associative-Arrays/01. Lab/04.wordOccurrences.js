@@ -16,4 +16,3 @@ function solve(text) {
         console.log(`${string} -> ${number} times`);
     }
 }
-solve(["Here", "is", "the", "first", "sentence", "Here", "is", "another", "sentence", "And", "finally", "the", "third", "sentence"])
