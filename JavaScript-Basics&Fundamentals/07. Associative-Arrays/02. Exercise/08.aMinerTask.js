@@ -12,6 +12,6 @@ function solve(arr) {
     }
  
     for (let resource in resourcesObj) {
-        console.log(`${resource} -> ${resourcesObj[resource]}`)
+        console.log(`${resource} -> ${resourcesObj[resource]}`);
     }
 }
