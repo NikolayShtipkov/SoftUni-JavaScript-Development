@@ -3,8 +3,9 @@ function solve(text) {
         return symbol === symbol.toUpperCase();
     }
 
-    let pattern = /\s+/g;
-    let words = text.split(pattern);
+    let words = text
+        .split(' ')
+        .filter(el => el !== '');
     let totalSum = 0;
 
     for (let word of words) {
