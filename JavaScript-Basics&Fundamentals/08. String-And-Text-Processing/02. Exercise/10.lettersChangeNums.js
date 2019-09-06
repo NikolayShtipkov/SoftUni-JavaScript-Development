@@ -32,4 +32,3 @@ function solve(text) {
 
     console.log(totalSum.toFixed(2));
 }
-solve('A12b s17G')
