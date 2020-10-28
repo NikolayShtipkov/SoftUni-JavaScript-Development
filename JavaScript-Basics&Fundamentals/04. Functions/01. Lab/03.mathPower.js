@@ -3,7 +3,7 @@ function solve(num, pow) {
     return Math.pow(num, pow);
 }
 
-//for-loop
+// for-loop
 function task(num, pow) {
     result = 1;
 
