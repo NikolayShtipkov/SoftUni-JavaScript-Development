@@ -21,5 +21,3 @@ function solve(input) {
 
     console.log(`Total money spend: ${totalMoneySpend.toFixed(2)}`);
 }
-
-solve([">>Sofa<<312.23!3", ">>TV<<300!5", ">Invalid<<!5", 'Purchase'])
